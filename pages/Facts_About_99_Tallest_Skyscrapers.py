@@ -8,7 +8,7 @@ from PIL import Image
 
 # Title and image
 st.title("Facts About the 99 Tallest Skyscrapers!")
-image = Image.open("Final Project/BurjKhalifa.jpg")
+image = Image.open("BurjKhalifa.jpg")
 st.image(image, width = 500)
 
 # Setting color and font for st.success titles
@@ -37,8 +37,7 @@ def quiz(skyscraper_name = 'Burj Khalifa'):
 quiz()
 
 # Query 5 --> Group dataframe showing how many skyscrapers are in each state
-path = "C:/Users/Remi/OneDrive/CS 230/Final Project/"
-df = pd.read_csv(path + "Skyscrapers2021.csv")
+df = pd.read_csv("Skyscrapers2021.csv")
 df1 = pd.DataFrame(df)
 st.success("Pivot Table That Shows the Number of Skyscrapers in Each City")
 df1_g2 = df1.groupby(by = ["CITY"]).nunique()
