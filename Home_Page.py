@@ -37,8 +37,7 @@ st.sidebar.header("Interact with the prompts below to learn more!")
 # Allowing users to select whether they want to see a bar chart, scatter plot, or simple line plot through a drop-down menu.
 st.sidebar.success("Below you can select what chart you would like to see to be able to view the number of floors for all 99 skyscrapers. They are ranked in order of height. You will see that height doesn't play a huge factor in how many floors a building has.")
 selected_chart = st.sidebar.selectbox("Please select the chart you want to see: ", ["", "Bar Chart", "Scatter Plot", "Simple Line Plot"])
-path = "C:/Users/Remi/OneDrive/CS 230/Final Project/"
-df = pd.read_csv(path + "Skyscrapers2021.csv")
+df = pd.read_csv("Skyscrapers2021.csv")
 x = df['RANK']
 y = df['FLOORS']
 
@@ -83,8 +82,7 @@ def year_name(year):
 # Query #3 --> Showing a map with all the skyscrapers on it.
 def view_map():
     st.write(f"Zoom in to see where/what skyscrapers are in a city! ")
-    path = "C:/Users/Remi/OneDrive/CS 230/Final Project/"
-    df = pd.read_csv(path + "Skyscrapers2021.csv")
+    df = pd.read_csv("Skyscrapers2021.csv")
     Skyscraper_names = []
     for name in df['NAME']:
         Skyscraper_names.append(name)
