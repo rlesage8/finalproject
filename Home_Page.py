@@ -27,7 +27,7 @@ st.markdown('''
 # Heading
 st.title("Skyscrapers in the World")
 st.write("Explore this site to learn more about the 99 tallest skyscrapers in the world!")
-image = Image.open("Final Project/tallestbuildings.jpg")
+image = Image.open("tallestbuildings.jpg")
 st.image(image, caption = 'Shanghai Tower, Lotte World Tower, Burj Khalifa, Taipei 101, International Commerce Center, One World Trade Center, Abraj Al-Bait Clock Tower, CTF Finance Center', width = 750)
 
 # Create a sidebar
