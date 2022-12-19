@@ -8,7 +8,7 @@ from PIL import Image
 
 # Title and image
 st.title("Facts About the 99 Tallest Skyscrapers!")
-image = Image.open("Final Project/BurjKhalifa.jpg")
+image = Image.open("BurjKhalifa.jpg")
 st.image(image, width = 500)
 
 # Setting color and font for st.success titles
